@@ -1,0 +1,12 @@
+a = [5, 2; 9, 1];
+b = [1, 2; 9, 2];
+fprintf('a > b: \n');
+disp(a > b);
+fprintf('a == b: \n');
+disp(a == b);
+fprintf('a < b : \n');
+disp(a < b);
+fprintf('(a == b) & (a < b): \n');
+disp((a == b) & (a < b));
+fprintf('(a == b) & (a > b): \n');
+disp((a == b) & (a > b));

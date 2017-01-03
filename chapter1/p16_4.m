@@ -1,0 +1,1 @@
+disp(factorialSum(20));

@@ -1,0 +1,12 @@
+h=pi/50;
+x=0:h:pi/4;
+y=1./1-sin(x);
+s1=sum(y(1:length(x)-1))*h
+s2=sum(y(2:length(x)))*h
+s3=trapz(x,y)
+ff=inline('1./1-sin(x)','x');
+s4=quad(ff,0,pi/4)
+z1=s1-2.^(1/2)
+z2=s2-2.^(1/2)
+z3=s3-2.^(1/2)
+z4=s4-2.^(1/2)
